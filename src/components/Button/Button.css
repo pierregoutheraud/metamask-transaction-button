@@ -7,16 +7,16 @@
   color: white;
   border-radius: 60px;
   padding: 0 25px 0 40px;
-  /* margin-left: 10px; */
   display: inline-flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(to right, var(--orange) 0%, rgba(0,0,0,0) 100%);
   background-color: var(--purple);
-  font-size: 18px;
   cursor: pointer;
+  line-height: 1.2;
   transition: 600ms all;
+  font-size: 18px;
   &:hover {
     transform: scale(0.98);
     background-color: var(--dark-purple);
@@ -33,32 +33,39 @@
 }
 
 .text {
-  font-size: 16px;
   font-weight: 600;
 }
 
 .withMetamask {
   margin-left: 6px;
   opacity: .7;
-  font-size: 12px;
-  font-weight: 300;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .amounts {
-  font-weight: 400;
+  font-weight: 600;
+}
+
+.amountBig {
+  font-size: 20px;
 }
 
 .amountSmall {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .conversion {
   opacity: .7;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .approx {
+  position: relative;
+  top: 1px;
   margin: 0 5px;
+  font-size: 14px;
 }
 
 .status {
