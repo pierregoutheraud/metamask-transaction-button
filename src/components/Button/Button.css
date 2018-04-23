@@ -14,11 +14,10 @@
   background-image: linear-gradient(to right, var(--orange) 0%, rgba(0,0,0,0) 100%);
   background-color: var(--purple);
   cursor: pointer;
-  line-height: 1.2;
-  transition: 600ms all;
+  line-height: 20px;
   font-size: 18px;
+  transition: 400ms all;
   &:hover {
-    transform: scale(0.98);
     background-color: var(--dark-purple);
   }
 }
