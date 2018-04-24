@@ -52,7 +52,7 @@
 }
 
 .amountSmall {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .conversion {
@@ -62,13 +62,13 @@
 
 .approx {
   position: relative;
-  top: 1px;
+  top: -1px;
   margin: 0 5px;
   font-size: 14px;
 }
 
 .status {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 img.symbolEthLogo {
