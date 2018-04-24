@@ -9,13 +9,13 @@
   --green: #03C482;
 }
 
-.metamask-donate {
+.metamask-button {
   display: inline-block;
   position: relative;
 }
 
-.metamask-donate * {
-  font-family: 'Source Sans Pro', arial;
+.metamask-button * {
+  font-family: 'Source Sans Pro', sans-serif;
   outline: none;
   -webkit-font-smoothing: antialiased;
 }
