@@ -1,5 +1,7 @@
 ## Metamask Transaction button
 
+![gif](https://d3vv6lp55qjaqc.cloudfront.net/items/3o2C1n3B460X1G2n3r1e/Screen%20Recording%202018-04-25%20at%2001.56%20AM.gif?v=e6c35374)
+
 ### Usage
 
 **Step1:** Include the JavaScript script on your page ONCE, ideally right before the ending body tag.
