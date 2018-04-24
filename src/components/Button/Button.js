@@ -22,22 +22,25 @@ const SYMBOLS = {
 export default class Button extends Component {
 
   static propTypes = {
+    address: PropTypes.string.isRequired,
+    amount: PropTypes.number.isRequired,
     text: PropTypes.string,
-    amount: PropTypes.number,
     logoAnimated: PropTypes.bool,
     amountCurrency: PropTypes.string,
-    address: PropTypes.string,
     successCallback: PropTypes.string,
     errorCallback: PropTypes.string,
   }
 
   static defaultProps = {
     text: 'Donate',
+    address: null,
+    amount: null,
     currency: SYMBOLS.ETH,
     amountCurrency: SYMBOLS.ETH,
     logoAnimated: true,
     successText: 'Thank you!',
     fiatFirst: false,
+    fiatCurrency: null,
   }
 
   state = {
@@ -53,7 +56,11 @@ export default class Button extends Component {
   }
 
   setAmounts() {
-    const { amount, amountCurrency, fiatCurrency } = this.props
+    const { address, amount, amountCurrency, fiatCurrency } = this.props
+
+    if (address === null || amount === null) {
+      return this.onError(new Error('Properties address or amount missing.'))
+    }
 
     if (amountCurrency === SYMBOLS.ETH) { // We convert from ETH to FIAT
 
