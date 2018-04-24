@@ -1,6 +1,6 @@
 {
-  "name": "metamask-donate",
-  "version": "0.1.0",
+  "name": "metamask-transaction-button",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "autoprefixer": "7.1.6",
