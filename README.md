@@ -4,7 +4,7 @@
 
 **Step1:** Include the JavaScript script on your page ONCE, ideally right before the ending body tag.
 ```html
-<script src="https://cdn.jsdelivr.net/gh/pierregoutheraud/metamask-transaction-button@1.0.1/build/static/js/mtb.js"></script>
+<script src="https://cdn.rawgit.com/pierregoutheraud/metamask-transaction-button/f21ec18e/build/static/js/mtb.js"></script>
 ```
 
 **Step2:** Place this code wherever you want a button to appear on your page.
@@ -87,14 +87,13 @@ Since the properties are passed in html attributes, they are all of type string.
 
 | Property | Type | Default | Possible values | Description |
 |:---|:---|:---|:---|:---|
-| address | Required | `undefined` | Any valid ETH wallet address. Example: `0x1f2b10EbC8783d2851B96CdA086E6e6a021E6b4B` | The recipient ETH wallet address.
-| amount | Required | `1` | Any float or integer numbers. Examples: `0.00492`, `12.4`, `20` | The amount to send in the transaction.
+| address | Required | `undefined` | Any valid ETH wallet address. | The recipient ETH wallet address.
+| amount | Required | `undefined` | Any float or integer numbers. Examples: `0.00492`, `12.4`, `20` | The amount to send in the transaction.
 | text | Optional | `Donate` | Any text. | The text to display in the button.
 | success-text | Optional | `Thank you!` | Any text. | Text to display when transaction is finished.
-| amount-currency | Optional | `ETH` | `ETH`, `AUD`, `BRL`, `CAD`, `CHF`, `CLP`, `CNY`, `CZK`, `DKK`, `EUR`, `GBP`, `HKD`, `HUF`, `IDR`, `ILS`, `INR`, `JPY`, `KRW`, `MXN`, `MYR`, `NOK`, `NZD`, `PHP`, `PKR`, `PLN`, `RUB`, `SEK`, `SGD`, `THB`, `TRY`, `TWD`, `ZAR` | The currency of the amount. If this is different from `ETH` (Example: `USD`) than the button will convert the amount into ETH and will display it as well.
-| fiat-currency | Optional | `undefined` | `AUD`, `BRL`, `CAD`, `CHF`, `CLP`, `CNY`, `CZK`, `DKK`, `EUR`, `GBP`, `HKD`, `HUF`, `IDR`, `ILS`, `INR`, `JPY`, `KRW`, `MXN`, `MYR`, `NOK`, `NZD`, `PHP`, `PKR`, `PLN`, `RUB`, `SEK`, `SGD`, `THB`, `TRY`, `TWD`, `ZAR` | Only works if your amount-currency is `ETH`. `fiat-currency` is the fiat currency (Example: `USD`, `EUR`...) used to display a converted amount.
+| amount-currency | Optional | `ETH` | `ETH`<br/> `AUD`<br/> `BRL`<br/> `CAD`<br/>`CHF`<br/> `CLP`<br/> `CNY`<br/> `CZK`<br/>`DKK`<br/> `EUR`<br/> `GBP`<br/> `HKD`<br/>`HUF`<br/> `IDR`<br/> `ILS`<br/> `INR`<br/>`JPY`<br/> `KRW`<br/> `MXN`<br/> `MYR`<br/>`NOK`<br/> `NZD`<br/> `PHP`<br/> `PKR`<br/>`PLN`<br/> `RUB`<br/> `SEK`<br/> `SGD`<br/>`THB`<br/> `TRY`<br/> `TWD`<br/> `ZAR` | The currency of the amount. If this is different from `ETH` (Example: `USD`) than the button will convert the amount into ETH.
+| fiat-currency | Optional | `undefined` | `AUD`<br/> `BRL`<br/> `CAD`<br/>`CHF`<br/> `CLP`<br/> `CNY`<br/> `CZK`<br/>`DKK`<br/> `EUR`<br/> `GBP`<br/> `HKD`<br/>`HUF`<br/> `IDR`<br/> `ILS`<br/> `INR`<br/>`JPY`<br/> `KRW`<br/> `MXN`<br/> `MYR`<br/>`NOK`<br/> `NZD`<br/> `PHP`<br/> `PKR`<br/>`PLN`<br/> `RUB`<br/> `SEK`<br/> `SGD`<br/>`THB`<br/> `TRY`<br/> `TWD`<br/> `ZAR`  | Only works if your amount-currency is `ETH`. `fiat-currency` is the fiat currency (Example: `USD`, `EUR`...) used to display a converted amount.
 | fiat-first | Optional | `false` | `true` or `false` | If `amount-currency` is different from `ETH` than it displays the big amount in `amount-currency`, the small amount will be displayed in `ETH`
 | logo-animated | Optional | `false` | `true` or `false` | Boolean to animate the logo.
 | success-callback | Optional | `undefined` | Any function defined in window. Example: `onSuccess` | The callback function to be called when transaction finished without errors.
 | error-callback | Optional | `undefined` | Any function defined in window. Example: `onError` | The callback function to be called when an error occured during the transaction.
-|
