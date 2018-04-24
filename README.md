@@ -4,7 +4,7 @@
 
 **Step1:** Include the JavaScript script on your page ONCE, ideally right before the ending body tag.
 ```html
-<script src="https://cdn.rawgit.com/pierregoutheraud/metamask-transaction-button/f21ec18e/build/static/js/mtb.js"></script>
+<script src="https://cdn.rawgit.com/pierregoutheraud/metamask-transaction-button/6ebebf41/build/static/js/mtb.js"></script>
 ```
 
 **Step2:** Place this code wherever you want a button to appear on your page.
