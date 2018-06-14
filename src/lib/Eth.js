@@ -33,8 +33,6 @@ class ETH {
 
   sendTransaction(valueEth, from, to) {
     return new Promise((resolve, reject) => {
-      // Need to round here because there is some problem with Wei value with fraction that toWei returns
-      // const amountEthRounded = Math.round(valueEth * 10000000000) / 10000000000
       const value = this.web3.utils.toWei(valueEth.toString(), 'ether')
       this.web3.eth.sendTransaction({
         from,
